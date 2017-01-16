@@ -28,12 +28,14 @@ class ModelsContainer extends Component {
   }
 
   extractModels () {
-    let new_models = [ 0, 0, 0, 0, 0, 0, 0];
+    let new_models = [ 0, 0, 0, 0, 0, 0, 0 ];
     let aircrafts = this.state.aircrafts;
+    let all_models = [];
     for (var i=0; i < aircrafts.length; i++) {
-      for (var j=0; j < AIRBUS_MODELS.length; j++) {
+      for (var j=0; j < AIRBUS_MODELS.length-1; j++) {
         let currentModel = aircrafts[i].Mdl;
-        if (currentModel.includes(AIRBUS_MODELS[j])) {
+        all_models.push(currentModel);
+        if (currentModel.includes(AIRBUS_MODELS[j].substring(0,3))) {
           new_models[j] += 1
         }
       }
