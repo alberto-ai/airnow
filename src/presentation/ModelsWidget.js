@@ -8,12 +8,12 @@ class ModelsWidget extends Component {
   	return (
       <div>
         <PageHeader className="panel_text">
-          { this.props.num_aircraft } {this.props.title} flying now
+          { this.props.num_aircraft } <small>{this.props.title} flying now</small>
         </PageHeader>
 
-        <BarChart width={500} height={300} layout='horizontal' data={this.props.data}
-              margin={{top: 5, right: 50, left: 20, bottom: 5}}>
-            <XAxis dataKey="name" label="family" />
+        <BarChart width={720} height={300} layout='horizontal' data={this.props.data}
+              margin={{top: 5, right: 50, left: 5, bottom: 5}}>
+            <XAxis dataKey="name" label="family"/>
             <YAxis unit="# aircraft"/>
             <CartesianGrid strokeDasharray="3 3"/>
             <Tooltip/>
