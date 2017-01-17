@@ -4,10 +4,10 @@ import ModelsContainer from './container/ModelsContainer';
 import FooterWidget from './presentation/FooterWidget';
 
 const URL_AIRBUS = 'http://public-api.adsbexchange.com/VirtualRadar/AircraftList.json?fTypeS=A3';
-const AIRBUS_MODELS = [ '300', '310', '320', '330', '340', '350', '380' ];
+const AIRBUS_MODELS = [ 'A300', 'A310', 'A320', 'A330', 'A340', 'A350', 'A380' ];
 
 const URL_BOEING = 'http://public-api.adsbexchange.com/VirtualRadar/AircraftList.json?fTypeS=B7';
-const BOEING_MODELS = [ '707', '717', '737', '747', '757', '767', '777', '787' ];
+const BOEING_MODELS = [ 'B707', 'B717', 'B737', 'B747', 'B757', 'B767', 'B777', 'B787' ];
 
 class App extends Component {
 

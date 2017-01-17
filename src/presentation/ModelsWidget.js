@@ -12,8 +12,8 @@ class ModelsWidget extends Component {
         </PageHeader>
 
         <BarChart width={720} height={300} layout='horizontal' data={this.props.data}
-              margin={{top: 5, right: 50, left: 5, bottom: 5}}>
-            <XAxis dataKey="name" label="family"/>
+              margin={{top: 5, right: 5, left: 5, bottom: 5}}>
+            <XAxis dataKey="name" />
             <YAxis unit="# aircraft"/>
             <CartesianGrid strokeDasharray="3 3"/>
             <Tooltip/>

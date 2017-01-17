@@ -34,8 +34,8 @@ class ModelsContainer extends Component {
     let aircrafts = this.state.aircrafts;
     for (var i=0; i < aircrafts.length; i++) {
       for (var j=0; j < this.state.model_types.length-1; j++) {
-        let currentModel = aircrafts[i].Mdl;
-        if (currentModel.includes(this.props.model_types[j].substring(0,2))) {
+        let currentModel = aircrafts[i].Type;
+        if (currentModel.includes(this.props.model_types[j].substring(0,3))) {
           new_models[j] += 1;
         }
       }
